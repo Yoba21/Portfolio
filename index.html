@@ -1,0 +1,167 @@
+<html lang="en">
+
+<head>
+    <meta Charset="utf-8">
+    <meta http-equiv="X-UA-campatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,">
+    <title>Yoba's Personal Website</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web\css\all.css">
+</head>
+
+<body>
+     <header class="nav_b">
+        <div class="logo_port">
+            <h2 class="logo">Portfo<span>lio</span> </h2>
+        </div>
+        
+        <div class="nav_bar">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#Contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+     </header>
+    <div id="header">
+        <div class="container">
+           
+            <div class="header-text">
+                <h1><strong>I'm <span>Eyob</span></strong></h1>
+                <h4><strong>Website Developer And<br> Graphics Designer</strong></h4>
+                <p>
+                    An Enthusiastic Website designer.Design smooth user-interfaces that<br>
+                    promote user interaction with information and data.
+                </p>
+
+            </div>
+            <div class="newslatter">
+                <form action="eyzzz86@gmail.com" method="GET">
+                    <input type="email" name="Email" id="mail" placeholder="Enter your Email" required>
+                    <input type="submit" name="submit" value="Email Me">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image02.png" alt="about">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-tittle">About me</h2>
+                    <p class="p-tittle">
+                        Capable of working with a variety of technology and software solutions,
+                        and managing databases.Hard-working web developer with a flair for creating
+                        elegant solutions in the least amount of time.I am incredibly organized and
+                        very detail oriented,I rarely make errors and know what even a small mistake
+                        can mean to a project.And also i can provide a clean code and Passionate about software
+                        architecture and cloud computing.
+                    </p>
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id='skills'>
+                        <ul>
+                            <li><span>UI/UX</span><br>Design Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Mobile App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id='education'>
+                        <ul>
+                            <li><span>2017-2021</span><br>Bsc in CS from UU</li>
+                            <li><span>2021-Current</span><br>ALX Software Engineering</li>
+                            <li><span>2021-2022</span><br>Backend(Node js) Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-tittle mys">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Design & Develop Custom Software Solutions
+                       that Empower Businesses to stay ahead of their 
+                       Competition.Analyze and Research the Market Trends
+                       and Collaborate These with Your Business Requirements.
+                    </p>
+                    <a href="#">Learn More... ></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>User-interfaces Design</h2>
+                    <p>Any part of a design that affects the user is UX design.
+                       I will help design custom user interfaces based on your business
+                       requirements for any of your device platforms, including mobile apps,
+                       tablets and desktops.
+                    </p>
+                    <a href="#">Learn More... ></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Develops and Customizes Custom Mobile Application
+                       Development Solutions for the Specific needs of any Business.
+                    </p>
+                    <a href="#">Learn More... ></a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>Eyzzz86@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+251921297530</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/yobaa____"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/eyob-zelalem-21420522b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfgQLk%2Ff5TwW3pohiTRkyqQ%3D%3D">
+                           <i class="fa-brands fa-linkedin"> </i></a>
+                        <a href="https://t.me/YooYoo21"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="images/Eyob Zelalem CV.pdf" download="Eyob Zelalem CV" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form" action="mailto:eyzzz86@gmail.com" method="GET">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Yoba. All rights reserved </p>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+
+</html>
