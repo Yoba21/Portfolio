@@ -1,3 +1,3 @@
-# Portfolio
+### Portfolio
 
-# this website is A show case of my previous works and Skills
+### This website is a show case of my Skills And Services i provide
