@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   width: 100%;
   z-index: 1000;
-  height: 100px;
+  height: 80px;
   background: rgba(34, 34, 34, 0.3);
   -webkit-transition: all ease-out 0.5s;
   -moz-transition: all ease-out 0.5s;
@@ -23,10 +23,10 @@ header {
   transition: all ease-out 0.5s;
 }
 .active-header {
-  background-color: rgba(34,34,34,0.8);
+  background-color: rgba(34, 34, 34, 0.8);
 }
 body {
-  background-color: rgba(34,34,34,0.9);
+  background-color: rgba(34, 34, 34, 1);
   color: #fff;
 }
 #header {
@@ -137,7 +137,7 @@ nav ul li a.active::after {
 
 #about {
   padding: 80px 0;
-  color: #fff;
+  color: #fffc;
 }
 .row {
   display: flex;
@@ -166,8 +166,7 @@ nav ul li a.active::after {
   color: #acaaaa;
 }
 .p-tittle {
-  font-size: 19px;
- 
+  font-size: 16px;
 }
 .tab-tittle {
   display: flex;
@@ -176,7 +175,7 @@ nav ul li a.active::after {
 }
 .tab-links {
   margin-right: 50px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   position: relative;
   cursor: pointer;
@@ -213,20 +212,18 @@ nav ul li a.active::after {
   text-decoration: none;
 }
 .tab-contents a:visited {
-  color: #06485c;
+  color: #097ea1;
 }
 /*............services.......*/
 
 #services {
-  padding: 100px 0;
+  padding: 80px 0;
   background-color: #cfc3c7;
   color: #000;
-  height: 100vh;
 }
 #services .sub-tittle {
-    text-align: center;
-    color: #3a3939;
-    
+  text-align: center;
+  color: #3a3939;
 }
 .services-list {
   display: grid;
@@ -237,18 +234,18 @@ nav ul li a.active::after {
 .services-list div {
   background: #ebe3e3;
   padding: 40px;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 300;
   border-radius: 15px;
   transition: background 0.5s, transform 0.5s;
 }
 .services-list div i {
-  font-size: 55px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 .services-list div h2 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 .services-list div a {
@@ -266,7 +263,7 @@ nav ul li a.active::after {
 /*.........Conatct.........*/
 
 #Contact {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .contact-left {
   flex-basis: 35%;
@@ -277,8 +274,12 @@ nav ul li a.active::after {
 .contact-left p {
   margin-top: 30px;
 }
+.contact-left p a {
+  color: #fff;
+  text-decoration: none;
+}
 .contact-left p i {
-  color: #ff004f;
+  color: #087799;
   margin-right: 15px;
   font-size: 25px;
 }
@@ -294,19 +295,24 @@ nav ul li a.active::after {
   transition: transform 0.5s;
 }
 .social-icons a:hover {
-  color: #ff004f;
+  color: #35bee7;
   transform: translateY(-5px);
 }
 .btn.btn2 {
   display: inline-block;
-  background: #ff004f;
+  background: #35bee7;
   text-decoration: none;
   margin-top: 30px;
   color: #fff;
-  border-radius: 6px;
-  border: 1px solid #ff004f;
+  border-radius: 20px;
+  border: 1px solid #35bee7;
   width: fit-content;
   padding: 14px 50px;
+  transition: transform 0.5s;
+}
+.btn.btn2:hover {
+  border-radius: 6px;
+  transform: translateY(-5px);
 }
 .contact-right form {
   width: 100%;
@@ -366,8 +372,11 @@ nav .fa-solid {
     display: block;
     font-size: 25px;
   }
+  nav .fa-solid.active-menu {
+    display: none;
+  }
   nav ul {
-    background: #262626;
+    background: rgba(34, 34, 34, 0.6);
     position: fixed;
     right: -150px;
     top: 0;
@@ -381,31 +390,33 @@ nav .fa-solid {
     display: block;
     margin: 25px;
   }
-
   .row {
     flex-wrap: wrap;
-    row-gap: 30px;
+    row-gap: 15px;
   }
   .about-col-1 img {
-    border: 0.5px solid white;
     box-sizing: border-box;
-    height: 30vh;
-    width: 400px;
+    height: 40vh;
+    width: 350px;
     flex-basis: 100%;
+    margin-left:24px;
   }
   .about-col-2 {
     flex-basis: auto;
-    padding: 10px;
+    padding: 5px;
   }
   .sub-tittle {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
   .p-tittle {
-    font-size: 16px;
+    font-size: 13px;
+  }
+  .tab-contents ul li {
+    font-size: 13px;
   }
   .tab-links {
-    font-size: 16px;
+    font-size: 13px;
   }
   .tab-contents ul li {
     font-size: 15px;
@@ -415,9 +426,24 @@ nav .fa-solid {
     margin-bottom: 10px;
     margin-left: 70px;
   }
+  .services-list div {
+    font-size: 11px;
+  }
+  .services-list div h2 {
+    font-size: 14px;
+  }
+  #contact {
+    margin-top: 0px;
+  }
+  #Contact .sub-tittle {
+    margin: auto;
+    padding-top: 80px;
+    text-align: center;
+  }
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+    text-align: center;
   }
   .contact-form {
     padding-left: -10px;

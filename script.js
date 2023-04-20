@@ -15,11 +15,15 @@ function opentab(tabname) {
 
 var sidemenu = document.getElementById("sidemenu");
 var solidicon = document.getElementsByClassName("fa-solid");
+var icon = document.querySelector(".fa-solid");
+
 function openmenu() {
   sidemenu.style.right = "0";
+  icon.classList.add("active-menu");
 }
 function closemenu() {
   sidemenu.style.right = "-150px";
+  icon.classList.remove("active-menu");
 }
 
 window.addEventListener("scroll", function () {
@@ -41,3 +45,5 @@ navItems.forEach((item) => {
     item.classList.add("active");
   });
 });
+
+
